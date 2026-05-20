@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Theme definitions based on reference page 5 */
+  --color-brand-navy: #082D68;
+  --color-brand-orange: #F26522;
+  --color-brand-yellow: #F5B400;
+  --color-brand-bg: #F8F9FB;
+  --color-brand-gray: #E6E8EC;
+
+  /* Let's define text color variations */
+  --color-text-navy: #082D68;
+  --color-text-orange: #F26522;
+}
+
+/* Custom fade-in and slide-up transition defaults */
+@layer utilities {
+  .transition-all-custom {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar customization for elegant viewing */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F9FB;
+}
+::-webkit-scrollbar-thumb {
+  background: #082D6822;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F2652266;
+}

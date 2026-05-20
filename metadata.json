@@ -1,0 +1,6 @@
+{
+  "name": "Southeast Asia Futures Conference",
+  "description": "The official website for the Southeast Asia Futures Conference on Social Sciences 2026 (SEA-FUTURES 2026).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
