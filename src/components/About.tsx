@@ -4,52 +4,21 @@ import { CORE_INFO, SDGS_INFO } from '../data/conferenceData';
 
 const BrawijayaEmblem = () => {
   return (
-    <svg className="w-14 h-14 shrink-0 hover:rotate-6 transition-transform duration-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Outer circular gold frame */}
-      <circle cx="50" cy="50" r="46" fill="#082D68" stroke="#F5B400" strokeWidth="2.5" />
-      <circle cx="50" cy="50" r="41" stroke="#F5B400" strokeWidth="1" strokeDasharray="3 2" />
-      
-      {/* Golden wings / rays */}
-      <path d="M 50 20 L 36 45 C 38 48, 42 50, 44 48 L 50 32 L 56 48 C 58 50, 62 48, 64 45 Z" fill="#F5B400" opacity="0.9" />
-      <path d="M 50 35 L 25 55 C 28 60, 36 62, 40 58 L 50 45 L 60 58 C 64 62, 72 60, 75 55 Z" fill="#F26522" opacity="0.8" />
-      
-      {/* Central Star */}
-      <polygon points="50,14 53,22 61,22 55,27 57,35 50,30 43,35 45,27 39,22 47,22" fill="#F5B400" />
-      
-      {/* Internal temple step monument */}
-      <rect x="42" y="62" width="16" height="4" rx="0.5" fill="#F5B400" />
-      <rect x="44" y="56" width="12" height="6" rx="0.5" fill="#ffffff" />
-      <rect x="47" y="50" width="6" height="6" rx="0.5" fill="#F5B400" />
-      
-      {/* Text arch UB */}
-      <text x="50" y="80" fill="#ffffff" fontSize="8" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">FISIP UB</text>
-    </svg>
+    <img 
+      src="/images/Logo_Universitas_Brawijaya.svg.png" 
+      alt="Logo Universitas Brawijaya" 
+      className="w-14 h-14 shrink-0 object-contain hover:rotate-6 transition-transform duration-300"
+    />
   );
 };
 
 const UPMEmblem = () => {
   return (
-    <svg className="w-14 h-14 shrink-0 hover:-rotate-6 transition-transform duration-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Outer circular gold trim and red fill */}
-      <circle cx="50" cy="50" r="46" fill="#C31F33" stroke="#F5B400" strokeWidth="2.5" />
-      <circle cx="50" cy="50" r="41" stroke="#ffffff" strokeWidth="0.75" />
-      
-      {/* Side arching leaves branches */}
-      <path d="M 22 55 C 25 75, 45 82, 50 82 C 55 82, 75 75, 78 55" fill="none" stroke="#F5B400" strokeWidth="1.5" />
-      <path d="M 18 45 C 15 65, 30 78, 50 81 C 70 78, 85 65, 82 45" fill="none" stroke="#ffffff" strokeWidth="1" strokeDasharray="2 2" />
-      
-      {/* Golden Stars */}
-      <polygon points="50,22 52,26 56,26 53,29 54,33 50,31 46,33 47,29 44,26 48,26" fill="#F5B400" />
-      <polygon points="36,26 38,30 42,30 39,33 40,37 36,35 32,37 33,33 30,30 34,30" fill="#F5B400" />
-      <polygon points="64,26 66,30 70,30 67,33 68,37 64,35 60,37 61,33 58,30 62,30" fill="#F5B400" />
-      
-      {/* Open book element */}
-      <path d="M 36 50 C 40 46, 48 46, 50 49 C 52 46, 60 46, 64 50 L 64 62 C 60 58, 52 58, 50 61 C 48 58, 40 58, 36 62 Z" fill="#ffffff" stroke="#F5B400" strokeWidth="1" />
-      <line x1="50" y1="49" x2="50" y2="61" stroke="#F5B400" strokeWidth="1" />
-      
-      {/* UPM print text */}
-      <text x="50" y="75" fill="#ffffff" fontSize="9" fontWeight="black" textAnchor="middle" fontFamily="sans-serif">UPM</text>
-    </svg>
+    <img 
+      src="/images/20201128221831UPM_LOGO_New_FINAL.png" 
+      alt="Logo Universiti Putra Malaysia" 
+      className="w-14 h-14 shrink-0 object-contain hover:-rotate-6 transition-transform duration-300"
+    />
   );
 };
 

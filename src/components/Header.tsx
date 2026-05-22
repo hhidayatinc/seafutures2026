@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { CORE_INFO } from '../data/conferenceData';
-import LogoEmblem from './LogoEmblem';
 
 interface HeaderProps {
   onNavigate: (sectionId: string) => void;
@@ -55,22 +54,15 @@ export default function Header({ onNavigate, activeSection, onOpenSubmitModal, o
           {/* Logo & Branding Area */}
           <div 
             onClick={() => handleLinkClick('home')}
-            className="flex items-center space-x-3 cursor-pointer group"
+            className="flex items-center cursor-pointer group"
           >
-            <LogoEmblem size={44} className="transition-all duration-300 group-hover:scale-105 shrink-0" />
-            <div className="flex flex-col">
-              <div className="flex items-center space-x-1.5">
-                <span className="text-xl font-bold tracking-tight text-brand-navy font-display">
-                  SEA-FUTURES
-                </span>
-                <span className="text-xl font-bold text-brand-orange font-display">
-                  2026
-                </span>
-              </div>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5c6e8d]">
-                Social Sciences Conference
-              </span>
-            </div>
+            <img
+              src="/images/southeast asialogosamping (1).png"
+              alt="SEA-FUTURES 2026 - Southeast Asia Futures Conference on Social Sciences"
+              className={`transition-all duration-300 group-hover:scale-[1.02] ${
+                scrolled ? 'h-10 sm:h-12' : 'h-12 sm:h-14'
+              }`}
+            />
           </div>
 
           {/* Desktop Navigation Link Menu */}
