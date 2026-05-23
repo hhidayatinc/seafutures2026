@@ -2,7 +2,7 @@ import React from 'react';
 import { HelpCircle } from 'lucide-react';
 import { SPEAKERS } from '../data/conferenceData';
 
-const SpeakerAvatar = ({ name, type }: { name: string; type: 'keynote' | 'panel' }) => {
+const SpeakerAvatar = ({ name, type, avatarUrl }: { name: string; type: 'keynote' | 'panel'; avatarUrl?: string }) => {
   const words = name.split(' ');
   let initials = '';
   const skippedTitles = ['DR', 'DR.', 'ASSOC', 'ASSOC.', 'PROF', 'PROF.', 'S.IP.', 'M.IDEA.'];
@@ -25,17 +25,27 @@ const SpeakerAvatar = ({ name, type }: { name: string; type: 'keynote' | 'panel'
     <div className={`relative mx-auto rounded-2xl overflow-hidden flex items-center justify-center border-4 border-white shadow-md bg-gradient-to-br from-[#082D68] via-indigo-950 to-[#041d44] transition-all duration-300 group-hover:scale-105 shrink-0 ${
       isKeynote ? 'w-32 h-32 mb-6' : 'w-24 h-24 mb-4'
     }`}>
-      {/* Decorative inner gradient lights */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(242,101,34,0.35),transparent_70%)]" />
-      <div className="absolute -bottom-2 w-11/12 h-3/5 rounded-t-2xl bg-white/10 border border-white/15" />
-      <div className="absolute w-4/5 h-4/5 rounded-2xl border border-white/5 animate-pulse" />
-      
-      {/* Initials Text */}
-      <span className={`font-display font-bold text-white tracking-tight leading-none z-10 ${
-        isKeynote ? 'text-4xl' : 'text-2xl'
-      }`}>
-        {initials}
-      </span>
+      {avatarUrl ? (
+        <img
+          src={avatarUrl}
+          alt={name}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      ) : (
+        <>
+          {/* Decorative inner gradient lights */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(242,101,34,0.35),transparent_70%)]" />
+          <div className="absolute -bottom-2 w-11/12 h-3/5 rounded-t-2xl bg-white/10 border border-white/15" />
+          <div className="absolute w-4/5 h-4/5 rounded-2xl border border-white/5 animate-pulse" />
+          
+          {/* Initials Text */}
+          <span className={`font-display font-bold text-white tracking-tight leading-none z-10 ${
+            isKeynote ? 'text-4xl' : 'text-2xl'
+          }`}>
+            {initials}
+          </span>
+        </>
+      )}
       
       {/* Small design accent dot */}
       <span className="absolute bottom-2 right-2 w-3 h-3 rounded-full bg-brand-orange border border-white" />
@@ -85,7 +95,7 @@ export default function Speakers() {
                   TBC
                 </div>
                 
-                <SpeakerAvatar name={speaker.name} type="keynote" />
+                <SpeakerAvatar name={speaker.name} type="keynote" avatarUrl={speaker.avatarUrl} />
 
                 <h4 className="text-xl font-bold text-brand-navy font-display">
                   {speaker.name}
@@ -141,7 +151,7 @@ export default function Speakers() {
 
                 <div className="flex-1 flex flex-col justify-between">
                   <div>
-                    <SpeakerAvatar name={speaker.name} type="panel" />
+                    <SpeakerAvatar name={speaker.name} type="panel" avatarUrl={speaker.avatarUrl} />
 
                     <h4 className="text-md font-bold text-brand-navy font-display group-hover:text-brand-orange transition-colors">
                       {speaker.name}

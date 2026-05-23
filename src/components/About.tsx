@@ -17,7 +17,7 @@ const UPMEmblem = () => {
     <img 
       src="/images/20201128221831UPM_LOGO_New_FINAL.png" 
       alt="Logo Universiti Putra Malaysia" 
-      className="w-14 h-14 shrink-0 object-contain hover:-rotate-6 transition-transform duration-300"
+      className="w-20 h-20 shrink-0 object-contain hover:-rotate-6 transition-transform duration-300"
     />
   );
 };

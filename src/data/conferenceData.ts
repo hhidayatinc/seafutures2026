@@ -16,6 +16,7 @@ export const SPEAKERS: Speaker[] = [
     title: 'Senior Lecturer, Department of International Relations',
     affiliation: 'Faculty of Social and Political Sciences (FISIP), Universitas Brawijaya',
     type: 'panel',
+    avatarUrl: '/images/DR ANGGUN.jpeg',
     bio: 'Dr. Anggun is an esteemed researcher specialized in International Political Economy, Southeast Asian regional integration, and developmental network dynamics.',
     isTBC: false
   },
@@ -25,6 +26,7 @@ export const SPEAKERS: Speaker[] = [
     title: 'Dean, Faculty of Modern Languages and Communication',
     affiliation: 'Universiti Putra Malaysia (UPM)',
     type: 'panel',
+    avatarUrl: '/images/DR HAZLINA.png',
     bio: 'Assoc. Prof. Dr. Hazlina Halim specializes in linguistics, socio-cultural communication, and digital narratives across multicultural communities in Malaysia and Southeast Asia.',
     isTBC: true
   },
