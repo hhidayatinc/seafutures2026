@@ -52,57 +52,25 @@ export const SPEAKERS: Speaker[] = [
 export const DATES: DateMilestone[] = [
   {
     id: 'date-1',
-    label: 'Registration & Abstract Submission Opens',
-    originalDate: '1 June 2026',
-    currentDate: '1 June 2026',
+    label: 'Registration & Abstract Submission',
+    originalDate: '1 June 2026 – 25 September 2026',
+    currentDate: '1 June 2026 – 25 September 2026',
     isActive: true,
     type: 'submission'
   },
   {
     id: 'date-2',
-    label: 'Abstract Submission Deadline',
-    originalDate: '25 September 2026',
-    currentDate: '25 September 2026',
+    label: 'Full Paper Submission & Review',
+    originalDate: '25 September 2026 - 10 October 2026',
+    currentDate: '25 September 2026 - 10 October 2026',
     isActive: true,
     type: 'submission'
   },
   {
     id: 'date-3',
-    label: 'Full Paper Submission & Review Period',
-    originalDate: '25 Sept – 10 Oct 2026',
-    currentDate: '25 September - 10 October 2026',
-    isActive: false,
-    type: 'submission'
-  },
-  {
-    id: 'date-4',
-    label: 'Notification of Acceptance',
-    originalDate: 'Rolling Basis till 15 October 2026',
-    currentDate: '15 October 2026',
-    isActive: false,
-    type: 'notification'
-  },
-  {
-    id: 'date-5',
-    label: 'Registration & Early Bird Payment',
-    originalDate: '15 – 22 October 2026 (TBA)',
-    currentDate: 'TBA',
-    isActive: false,
-    type: 'registration'
-  },
-  {
-    id: 'date-6',
-    label: 'Conference Main Program Day 1',
-    originalDate: '31 October 2026',
-    currentDate: '31 October 2026',
-    isActive: false,
-    type: 'event'
-  },
-  {
-    id: 'date-7',
-    label: 'Conference Main Program Day 2',
-    originalDate: '1 November 2026',
-    currentDate: '1 November 2026',
+    label: 'Conference Day',
+    originalDate: '31 October - 1 November 2026',
+    currentDate: '31 October - 1 November 2026',
     isActive: false,
     type: 'event'
   }

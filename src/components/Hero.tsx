@@ -60,6 +60,14 @@ export default function Hero({ onOpenSubmitModal, onOpenRegisterModal, onScrollT
           
           {/* Hero text columns */}
           <div className="lg:col-span-7 flex flex-col space-y-6">
+            {/* Logo bar */}
+            <div className="inline-flex items-center space-x-4 bg-white px-5 py-2.5 rounded-xl self-start shadow-md">
+              <img src="/images/Logo_Universitas_Brawijaya.svg.png" alt="Universitas Brawijaya" className="h-10 w-auto object-contain" />
+              <img src="/images/LOGO-FISIP-UB-25-300x212.png" alt="FISIP UB" className="h-10 w-auto object-contain" />
+              <img src="/images/diesnatalis.jpeg" alt="Dies Natalis" className="h-10 w-auto object-contain" />
+              <img src="/images/20201128221831UPM_LOGO_New_FINAL.png" alt="Universiti Putra Malaysia" className="h-10 w-auto object-contain" />
+            </div>
+
             <div className="inline-flex items-center space-x-2 bg-brand-orange/20 border border-brand-orange/35 px-3 py-1.5 rounded-full text-brand-yellow text-xs font-semibold uppercase tracking-wider self-start">
               <Sparkles className="w-3.5 h-3.5" />
               <span>International Academic Congress 2026</span>
@@ -67,12 +75,14 @@ export default function Hero({ onOpenSubmitModal, onOpenRegisterModal, onScrollT
 
             <div className="space-y-3">
               <span className="text-xs font-mono tracking-widest text-brand-yellow font-bold block uppercase">
-                {CORE_INFO.host.university} &bull; {CORE_INFO.cohost.short} Joint Venture
+                Faculty of Social and Political Sciences Universitas Brawijaya Proudly Presents
               </span>
               <h1 className="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-white tracking-tight font-display leading-[1.1] text-balance">
                 Southeast Asia Futures Conference on <span className="text-brand-orange">Social Sciences 2026</span>
               </h1>
             </div>
+
+            <p className="text-sm md:text-base font-semibold text-brand-yellow tracking-wide">A Hybrid Conference</p>
 
             <p className="text-gray-300 text-lg md:text-xl leading-relaxed font-sans max-w-2xl">
               <strong className="text-white font-semibold">"Global Southeast Asia, Shared Futures"</strong> &mdash; 

@@ -105,7 +105,7 @@ export default function RegistrationVenue({ isRegisterModalOpen, onCloseRegister
             </div>
           </div>
 
-          {/* Registration fee / blank placeholder section right */}
+          {/* Registration fee section */}
           <div className="lg:col-span-5 bg-white border border-brand-gray rounded-2xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-2 bg-brand-navy" />
 
@@ -116,33 +116,88 @@ export default function RegistrationVenue({ isRegisterModalOpen, onCloseRegister
               <h3 className="text-xl font-bold text-brand-navy font-display">
                 Registration Fees
               </h3>
-              <p className="text-xs text-gray-400 leading-relaxed font-sans mt-1">
-                Fee schedules and pricing matrix for Presenters (Regular/Student) or general Attendants are currently under final administrative review by the hosting partners.
-              </p>
             </div>
 
-            {/* Simulated Blank pricing placeholder matching Page 3 brief "Kosongin dulu" */}
-            <div className="border border-dashed border-gray-300 rounded-xl p-6 text-center bg-brand-bg relative my-6">
-              <div className="absolute top-3 right-3">
-                <span className="inline-block px-2 py-0.5 rounded bg-brand-orange/15 text-brand-orange text-[9px] font-mono font-bold uppercase">
-                  Pending Approval
-                </span>
+            {/* General Rates Table */}
+            <div className="mb-6">
+              <h4 className="text-xs font-mono font-bold tracking-wider uppercase text-brand-navy mb-3">General Rates</h4>
+              <div className="overflow-hidden rounded-xl border border-brand-gray">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="bg-brand-navy text-white">
+                      <th className="text-left px-4 py-3 font-semibold text-xs tracking-wide"></th>
+                      <th className="text-center px-3 py-3 font-semibold text-xs tracking-wide">
+                        <div>Early Bird Entry</div>
+                        <div className="text-[10px] font-normal text-white/70 mt-0.5">1st June 2026</div>
+                      </th>
+                      <th className="text-center px-3 py-3 font-semibold text-xs tracking-wide">
+                        <div>Regular Entry</div>
+                        <div className="text-[10px] font-normal text-white/70 mt-0.5">10th July 2026</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-brand-gray bg-brand-bg/50">
+                      <td className="px-4 py-3 text-xs font-semibold text-brand-navy">In-Person Presentation</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 350</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 375</td>
+                    </tr>
+                    <tr className="border-b border-brand-gray">
+                      <td className="px-4 py-3 text-xs font-semibold text-brand-navy">In-Person Listener</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 125</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 150</td>
+                    </tr>
+                    <tr className="border-b border-brand-gray bg-brand-bg/50">
+                      <td className="px-4 py-3 text-xs font-semibold text-brand-navy">Virtual Presentation</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 250</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 275</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 text-xs font-semibold text-brand-navy">Virtual Listener</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 50</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 75</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+            </div>
 
-              <span className="text-sm font-bold text-brand-navy block uppercase mb-1">
-                Tariffs (TBA)
-              </span>
-              <div className="text-3xl font-black text-[#5c6e8d]/50 font-mono tracking-tight my-4">
-                $ --.--
+            {/* Student Rates Table */}
+            <div className="mb-4">
+              <h4 className="text-xs font-mono font-bold tracking-wider uppercase text-brand-navy mb-3">Student Rates</h4>
+              <div className="overflow-hidden rounded-xl border border-brand-gray">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="bg-brand-navy text-white">
+                      <th className="text-left px-4 py-3 font-semibold text-xs tracking-wide"></th>
+                      <th className="text-center px-3 py-3 font-semibold text-xs tracking-wide">Entry</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-brand-gray bg-brand-bg/50">
+                      <td className="px-4 py-3 text-xs font-semibold text-brand-navy">In-Person Presentation</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 325</td>
+                    </tr>
+                    <tr className="border-b border-brand-gray">
+                      <td className="px-4 py-3 text-xs font-semibold text-brand-navy">In-Person Listener</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 100</td>
+                    </tr>
+                    <tr className="border-b border-brand-gray bg-brand-bg/50">
+                      <td className="px-4 py-3 text-xs font-semibold text-brand-navy">Virtual Presentation</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 225</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 text-xs font-semibold text-brand-navy">Virtual Listener</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 25</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <p className="text-[10px] text-gray-500 italic max-w-xs mx-auto font-sans leading-relaxed">
-                "Official publication pricing and account payment routines are currently being drafted. We support sliding-scales for developing local regions."
-              </p>
             </div>
 
             <div className="pt-4 border-t border-brand-gray/60 flex items-center space-x-2 text-xs text-gray-400">
               <Info className="w-4 h-4 text-brand-orange shrink-0" />
-              <span>Full information is refreshed on a rolling basis.</span>
+              <span>Early bird rates apply for registrations before 10th July 2026.</span>
             </div>
           </div>
 

@@ -1,120 +1,9 @@
 import React, { useState } from 'react';
-import { Calendar, Clock, MapPin, Milestone, CheckSquare, Layers, Sparkles, Award } from 'lucide-react';
+import { Calendar, Clock } from 'lucide-react';
 import { DATES } from '../data/conferenceData';
 
 export default function ProgramTimeline() {
   const [activeTimelineTab, setActiveTimelineTab] = useState<'timeline' | 'day1' | 'day2'>('timeline');
-
-  // Interactive timeline events Day 1
-  const day1Events = [
-    {
-      time: '08:00 - 09:00',
-      title: 'Registration & Morning Coffee Reception',
-      speaker: 'Event Committee Desk',
-      room: 'Main Academic Hall Foyer, Universiti Putra Malaysia',
-      desc: 'Pick up badges, conference programs, proceedings handbook, and VIP kits.'
-    },
-    {
-      time: '09:00 - 09:30',
-      title: 'Opening Ceremony & VIP Welcoming Addresses',
-      speaker: 'Deans & Organizers from Universitas Brawijaya (FISIP UB) & Universiti Putra Malaysia (UPM)',
-      room: 'Grand Auditorium, UPM',
-      desc: 'Introductory speeches celebrating international research cooperation and regional transformation.'
-    },
-    {
-      time: '09:30 - 10:45',
-      title: 'Keynote Address & Photo Session',
-      speaker: 'TBA (Global Social Sciences Leader)',
-      room: 'Grand Auditorium, UPM',
-      desc: 'A comprehensive opening lecture framing "Global Southeast Asia: Expanding Networks for Regional Development".'
-    },
-    {
-      time: '10:45 - 11:15',
-      title: 'Networking Coffee Break & Poster Exhibition',
-      speaker: 'All participants',
-      room: 'Exhibition Hall B',
-      desc: 'Reviewing physical poster sessions on regional development, environmental policies, and digital models.'
-    },
-    {
-      time: '11:15 - 12:45',
-      title: 'Panel Session 1: Technology & Social Transformation',
-      speaker: 'Dr. Anggun Trisnanto Hari Susilo, S.IP., M.IDEA. & Selected Panelists',
-      room: 'Auditorium A',
-      desc: 'Examining artificial intelligence governance, public communication, and digital inequality gaps across ASEAN.'
-    },
-    {
-      time: '12:45 - 14:00',
-      title: 'Halal Community Lunch & Dedicated networking slots',
-      speaker: 'All Participants',
-      room: 'VIP Dining Area',
-      desc: 'Fostering peer connections over authentic Malaysian-Javanese local dishes.'
-    },
-    {
-      time: '14:00 - 15:30',
-      title: 'Parallel Paper Tracks (Sessions 1-4)',
-      speaker: 'Accepted Author Presenters',
-      room: 'Seminar Rooms 101, 102 & 201',
-      desc: 'Simultaneous tracks covering tracks like: 1) Public Policy, 2) Democracy & Political Dynamics, 3) Data Governance & Privacy.'
-    },
-    {
-      time: '15:30 - 15:50',
-      title: 'Afternoon Tea Stand & Informal dialogue',
-      room: 'Central Courtyard',
-      desc: 'Quick refreshments.'
-    },
-    {
-      time: '15:50 - 17:30',
-      title: 'Parallel Paper Tracks (Sessions 5-8)',
-      speaker: 'Accepted Author Presenters',
-      room: 'Seminar Rooms 101, 102 & 201',
-      desc: 'Continuing specialized sessions on: 4) Social Cohesion, 5) Youth Education & Well-being, 6) Media Narratives & Perception.'
-    }
-  ];
-
-  // Day 2
-  const day2Events = [
-    {
-      time: '09:00 - 10:30',
-      title: 'Panel Session 2: Governance, Regulation, & Public Policy',
-      speaker: 'Assoc. Prof. Dr Hazlina Abdul Halim & Co-Speakers',
-      room: 'Grand Auditorium, UPM',
-      desc: 'Analyses of policy coordination, rural developments, land preservation strategies, and digital education platforms.'
-    },
-    {
-      time: '10:30 - 11:00',
-      title: 'Coffee Break & Group Photograph',
-      room: 'Central Courtyard Steps',
-      desc: 'Official grouping photo of all international delegates and representatives.'
-    },
-    {
-      time: '11:00 - 12:30',
-      title: 'Parallel Paper Tracks (Sessions 9-12)',
-      speaker: 'Accepted Author Presenters',
-      room: 'Seminar Rooms 101 & 102',
-      desc: 'Final presentation rounds focusing on: 10) Regional Change, 11) International Relations & ASEAN centralization, 12) Culture & Society.'
-    },
-    {
-      time: '12:30 - 14:00',
-      title: 'VIP Lunch & Panelist Discussion Wrap-Up',
-      speaker: 'Senior Representatives',
-      room: 'Faculty Club lounge',
-      desc: 'Private roundtables plotting collaborative grant programs and multi-institute curriculum exchanges.'
-    },
-    {
-      time: '14:00 - 15:30',
-      title: 'Best Paper Awards & Proceedings Closure',
-      speaker: 'Award Committee Chair',
-      room: 'Grand Auditorium, UPM',
-      desc: 'Recognition of Top 3 Outstanding Studies, Student Paper awards, and brief remarks on manuscript publication pathways.'
-    },
-    {
-      time: '15:30 - 16:00',
-      title: 'Closing Ceremony & Coffee Send-off',
-      speaker: 'Organizing Committee Directors',
-      room: 'Grand Auditorium, UPM',
-      desc: 'A physical farewell and official hand-off notice for upcoming SEA-FUTURES iterations.'
-    }
-  ];
 
   return (
     <section id="program" className="py-20 bg-white">
@@ -218,90 +107,32 @@ export default function ProgramTimeline() {
           </div>
         )}
 
-        {/* TAB 2: Day 1 Schedule list */}
+        {/* TAB 2: Day 1 - Coming Soon */}
         {activeTimelineTab === 'day1' && (
-          <div className="max-w-4xl mx-auto space-y-6">
-            <div className="flex items-center space-x-2 bg-brand-orange/10 border border-brand-orange/20 px-3 py-1 px-4 py-2.5 rounded-xl text-brand-orange font-semibold text-xs uppercase mb-4 self-start max-w-sm">
-              <Sparkles className="w-4 h-4" />
-              <span>Full Program Day 1 &bull; Oct 31, 2026</span>
-            </div>
-
-            <div className="space-y-4">
-              {day1Events.map((ev, index) => (
-                <div 
-                  key={index}
-                  className="bg-brand-bg border border-brand-gray rounded-2xl p-6 hover:bg-white hover:shadow-md transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-4 items-center"
-                >
-                  <div className="md:col-span-3 flex flex-row md:flex-col items-center md:items-start space-x-2 md:space-x-0">
-                    <Clock className="w-4 h-4 text-brand-orange shrink-0" />
-                    <span className="text-sm font-mono font-bold text-brand-navy md:mt-1">
-                      {ev.time}
-                    </span>
-                  </div>
-
-                  <div className="md:col-span-9 space-y-2 border-l-0 md:border-l md:border-brand-gray md:pl-6">
-                    <h4 className="text-md font-bold text-brand-navy font-display line-clamp-2 leading-snug">
-                      {ev.title}
-                    </h4>
-                    {ev.speaker && (
-                      <p className="text-xs text-brand-orange font-semibold font-sans">
-                        Presented by: {ev.speaker}
-                      </p>
-                    )}
-                    <p className="text-xs text-gray-500 font-sans">
-                      {ev.desc}
-                    </p>
-                    <div className="inline-flex items-center text-[10px] font-mono font-semibold bg-brand-navy/5 text-brand-navy px-2 py-0.5 rounded border">
-                      <MapPin className="w-2.5 h-2.5 mr-1" />
-                      <span>{ev.room}</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
+          <div className="max-w-2xl mx-auto text-center py-16">
+            <div className="bg-brand-bg border border-brand-gray rounded-2xl p-12">
+              <div className="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Clock className="w-8 h-8 text-brand-orange" />
+              </div>
+              <h3 className="text-2xl font-extrabold text-brand-navy font-display mb-3">Coming Soon</h3>
+              <p className="text-gray-500 text-sm font-sans max-w-md mx-auto">
+                The detailed program schedule for Day 1 (31 October 2026) will be announced closer to the conference date. Stay tuned!
+              </p>
             </div>
           </div>
         )}
 
-        {/* TAB 3: Day 2 Schedule list */}
+        {/* TAB 3: Day 2 - Coming Soon */}
         {activeTimelineTab === 'day2' && (
-          <div className="max-w-4xl mx-auto space-y-6">
-            <div className="flex items-center space-x-2 bg-brand-navy/10 border border-brand-navy/20 px-3 py-1 px-4 py-2.5 rounded-xl text-brand-navy font-semibold text-xs uppercase mb-4 self-start max-w-sm">
-              <Award className="w-4 h-4" />
-              <span>Full Program Day 2 &bull; Nov 1, 2026</span>
-            </div>
-
-            <div className="space-y-4">
-              {day2Events.map((ev, index) => (
-                <div 
-                  key={index}
-                  className="bg-brand-bg border border-brand-gray rounded-2xl p-6 hover:bg-white hover:shadow-md transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-4 items-center"
-                >
-                  <div className="md:col-span-3 flex flex-row md:flex-col items-center md:items-start space-x-2 md:space-x-0">
-                    <Clock className="w-4 h-4 text-brand-orange shrink-0" />
-                    <span className="text-sm font-mono font-bold text-brand-navy md:mt-1">
-                      {ev.time}
-                    </span>
-                  </div>
-
-                  <div className="md:col-span-9 space-y-2 border-l-0 md:border-l md:border-brand-gray md:pl-6">
-                    <h4 className="text-md font-bold text-brand-navy font-display line-clamp-2 leading-snug">
-                      {ev.title}
-                    </h4>
-                    {ev.speaker && (
-                      <p className="text-xs text-brand-orange font-semibold font-sans">
-                        Presented by: {ev.speaker}
-                      </p>
-                    )}
-                    <p className="text-xs text-gray-500 font-sans">
-                      {ev.desc}
-                    </p>
-                    <div className="inline-flex items-center text-[10px] font-mono font-semibold bg-brand-navy/5 text-brand-navy px-2 py-0.5 rounded border">
-                      <MapPin className="w-2.5 h-2.5 mr-1" />
-                      <span>{ev.room}</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
+          <div className="max-w-2xl mx-auto text-center py-16">
+            <div className="bg-brand-bg border border-brand-gray rounded-2xl p-12">
+              <div className="w-16 h-16 bg-brand-navy/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Clock className="w-8 h-8 text-brand-navy" />
+              </div>
+              <h3 className="text-2xl font-extrabold text-brand-navy font-display mb-3">Coming Soon</h3>
+              <p className="text-gray-500 text-sm font-sans max-w-md mx-auto">
+                The detailed program schedule for Day 2 (1 November 2026) will be announced closer to the conference date. Stay tuned!
+              </p>
             </div>
           </div>
         )}
