@@ -181,26 +181,7 @@ export default function Speakers() {
               </div>
             ))}
 
-            {/* Call for Speaker Slot */}
-            <div className="bg-brand-orange/5 rounded-2xl border-2 border-dashed border-brand-orange/30 p-6 flex flex-col justify-between hover:bg-brand-orange/10 transition-all duration-300">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-brand-orange/10 text-brand-orange flex items-center justify-center mb-4">
-                  <HelpCircle className="w-6 h-6" />
-                </div>
-                <h4 className="text-md font-bold text-brand-navy font-display">
-                  Calling Panelist Submissions
-                </h4>
-                <p className="text-xs text-gray-600 mt-1">
-                  Want to submit a panel study or co-chair a session with senior investigators?
-                </p>
-                <p className="text-xs text-brand-orange font-medium mt-3">
-                  Open for selected Senior Abstract Submissions.
-                </p>
-              </div>
-              <div className="mt-6 pt-4 border-t border-brand-orange/10 flex items-center justify-end">
-                <span className="text-xs font-bold text-brand-navy">Apply as Panelist</span>
-              </div>
-            </div>
+          
           </div>
         </div>
 

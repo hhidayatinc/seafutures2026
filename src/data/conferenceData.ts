@@ -53,8 +53,8 @@ export const DATES: DateMilestone[] = [
   {
     id: 'date-1',
     label: 'Registration & Abstract Submission',
-    originalDate: '1 June 2026 – 25 September 2026',
-    currentDate: '1 June 2026 – 25 September 2026',
+    originalDate: '10 June 2026 – 25 September 2026',
+    currentDate: '10 June 2026 – 25 September 2026',
     isActive: true,
     type: 'submission'
   },

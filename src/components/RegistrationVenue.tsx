@@ -128,7 +128,7 @@ export default function RegistrationVenue({ isRegisterModalOpen, onCloseRegister
                       <th className="text-left px-4 py-3 font-semibold text-xs tracking-wide"></th>
                       <th className="text-center px-3 py-3 font-semibold text-xs tracking-wide">
                         <div>Early Bird Entry</div>
-                        <div className="text-[10px] font-normal text-white/70 mt-0.5">1st June 2026</div>
+                        <div className="text-[10px] font-normal text-white/70 mt-0.5">10th June 2026</div>
                       </th>
                       <th className="text-center px-3 py-3 font-semibold text-xs tracking-wide">
                         <div>Regular Entry</div>
@@ -139,23 +139,23 @@ export default function RegistrationVenue({ isRegisterModalOpen, onCloseRegister
                   <tbody>
                     <tr className="border-b border-brand-gray bg-brand-bg/50">
                       <td className="px-4 py-3 text-xs font-semibold text-brand-navy">In-Person Presentation</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 350</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 375</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 130</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 150</td>
                     </tr>
                     <tr className="border-b border-brand-gray">
                       <td className="px-4 py-3 text-xs font-semibold text-brand-navy">In-Person Listener</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 125</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 150</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 35</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 55</td>
                     </tr>
                     <tr className="border-b border-brand-gray bg-brand-bg/50">
                       <td className="px-4 py-3 text-xs font-semibold text-brand-navy">Virtual Presentation</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 250</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 275</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 70</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 105</td>
                     </tr>
                     <tr>
                       <td className="px-4 py-3 text-xs font-semibold text-brand-navy">Virtual Listener</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 50</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 75</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 15</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 35</td>
                     </tr>
                   </tbody>
                 </table>
@@ -176,19 +176,19 @@ export default function RegistrationVenue({ isRegisterModalOpen, onCloseRegister
                   <tbody>
                     <tr className="border-b border-brand-gray bg-brand-bg/50">
                       <td className="px-4 py-3 text-xs font-semibold text-brand-navy">In-Person Presentation</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 325</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 120</td>
                     </tr>
                     <tr className="border-b border-brand-gray">
                       <td className="px-4 py-3 text-xs font-semibold text-brand-navy">In-Person Listener</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 100</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 25</td>
                     </tr>
                     <tr className="border-b border-brand-gray bg-brand-bg/50">
                       <td className="px-4 py-3 text-xs font-semibold text-brand-navy">Virtual Presentation</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 225</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 60</td>
                     </tr>
                     <tr>
                       <td className="px-4 py-3 text-xs font-semibold text-brand-navy">Virtual Listener</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 25</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 5</td>
                     </tr>
                   </tbody>
                 </table>

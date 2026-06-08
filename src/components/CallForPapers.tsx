@@ -67,76 +67,65 @@ export default function CallForPapers() {
         </div>
 
         {/* Publication Opportunities */}
-        <div id="publication-opportunities" className="bg-white rounded-2xl border border-brand-gray/80 p-6 sm:p-8 shadow-md">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            
-            <div className="lg:col-span-4 flex flex-col justify-between">
-              <div className="space-y-3">
-                <span className="text-xs font-mono font-bold tracking-widest text-brand-orange uppercase block">
-                  OUTLET ALIGNMENTS
-                </span>
-                <h3 className="text-xl sm:text-2xl font-extrabold text-brand-navy font-display leading-tight">
-                  Publication Opportunities
-                </h3>
-                <p className="text-xs text-gray-500 font-sans leading-relaxed">
-                  Selected high-quality papers will undergo peer evaluation for fast-track publication.
-                </p>
-              </div>
-
-              <div className="block mt-6 border-t border-brand-gray/80 pt-4">
-                <span className="text-[10px] font-mono text-brand-orange uppercase font-bold block">
-                  Editorial Note
-                </span>
-                <p className="text-[11px] text-gray-400 font-sans leading-relaxed mt-1">
-                  All submissions are peer-reviewed. Acceptance into targeted journals depends entirely on manuscript originality and quality standards.
-                </p>
-              </div>
-            </div>
-
-            <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-              
-              {/* Option 1 */}
-              <div className="bg-gradient-to-br from-[#FFF8F2] to-white border border-brand-orange/10 rounded-xl p-5 hover:shadow-md hover:border-brand-orange/25 transition-all duration-300 group">
-                <div className="w-12 h-12 rounded-full bg-brand-orange text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm">
-                  <Layers className="w-5 h-5" />
-                </div>
-                <h4 className="text-sm font-bold text-brand-navy font-display">
-                  Conference Proceedings
-                </h4>
-                <p className="text-xs text-gray-500 leading-relaxed mt-2 font-sans">
-                  Peer-reviewed abstracts and papers will be archived into registered digital proceedings with standard DOI indexes.
-                </p>
-              </div>
-
-              {/* Option 2 */}
-              <div className="bg-gradient-to-br from-[#FFF8F2] to-white border border-brand-orange/10 rounded-xl p-5 hover:shadow-md hover:border-brand-orange/25 transition-all duration-300 group">
-                <div className="w-12 h-12 rounded-full bg-brand-orange text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm">
-                  <Award className="w-5 h-5" />
-                </div>
-                <h4 className="text-sm font-bold text-brand-navy font-display">
-                  International Book Chapters
-                </h4>
-                <p className="text-xs text-gray-500 leading-relaxed mt-2 font-sans">
-                  Selected outputs will be grouped by specific sub-themes to form reference hardback book chapters with top global academic publishers.
-                </p>
-              </div>
-
-              {/* Option 3 */}
-              <div className="bg-gradient-to-br from-[#FFF8F2] to-white border border-brand-orange/10 rounded-xl p-5 hover:shadow-md hover:border-brand-orange/25 transition-all duration-300 group">
-                <div className="w-12 h-12 rounded-full bg-brand-orange text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm">
-                  <TableProperties className="w-5 h-5" />
-                </div>
-                <h4 className="text-sm font-bold text-brand-navy font-display">
-                  Selected Indexed Journals
-                </h4>
-                <p className="text-xs text-gray-500 leading-relaxed mt-2 font-sans">
-                  Top papers undergo priority evaluation in respected sub-theme indexed journals (including Scopus Tier special volumes).
-                </p>
-              </div>
-
-            </div>
-
+        <div id="publication-opportunities" className="bg-white rounded-2xl border border-brand-gray/80 p-6 sm:p-10 shadow-md">
+          
+          <div className="text-center mb-8">
+            <span className="text-xs font-mono font-bold tracking-widest text-brand-orange uppercase block mb-2">
+              OUTLET ALIGNMENTS
+            </span>
+            <h3 className="text-xl sm:text-2xl font-extrabold text-brand-navy font-display leading-tight">
+              Publication Opportunities
+            </h3>
+            <div className="w-12 h-1 bg-brand-orange mx-auto mt-3 rounded-full" />
           </div>
+
+          <div className="max-w-3xl mx-auto space-y-6">
+            <p className="text-sm sm:text-base text-gray-700 font-sans leading-relaxed">
+              SEA-FUTURES 2026 offers additional publication opportunities for interested participants. To opt for this program and proceed with the full paper submission and review process according to the timeline, an additional publication fee is required upfront.
+            </p>
+
+            <div>
+              <p className="text-sm sm:text-base font-semibold text-brand-navy font-display mb-3">
+                Publication options are available through:
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3 group">
+                  <div className="w-8 h-8 rounded-full bg-brand-orange text-white flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                    <Award className="w-4 h-4" />
+                  </div>
+                  <span className="text-sm sm:text-base text-gray-700 font-sans leading-relaxed">
+                    International Journal indexed by Scopus <span className="font-bold text-brand-navy">(USD 200)</span>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 group">
+                  <div className="w-8 h-8 rounded-full bg-brand-orange text-white flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                    <Layers className="w-4 h-4" />
+                  </div>
+                  <span className="text-sm sm:text-base text-gray-700 font-sans leading-relaxed">
+                    International Proceedings indexed by Scopus <span className="font-bold text-brand-navy">(USD 175)</span>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 group">
+                  <div className="w-8 h-8 rounded-full bg-brand-orange text-white flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                    <TableProperties className="w-4 h-4" />
+                  </div>
+                  <span className="text-sm sm:text-base text-gray-700 font-sans leading-relaxed">
+                    International Proceeding <span className="font-bold text-brand-navy">(USD 100)</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="border-t border-brand-gray/80 pt-5 mt-6">
+              <div className="flex items-start gap-3 bg-gradient-to-r from-amber-50 to-orange-50 border border-brand-orange/15 rounded-xl p-4">
+                <Sparkles className="w-5 h-5 text-brand-orange shrink-0 mt-0.5" />
+                <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
+                  <span className="font-bold text-brand-navy">Please note</span> that all full paper submissions will undergo a separate review and editorial process, subject to the requirements of the respective journal or publisher.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>

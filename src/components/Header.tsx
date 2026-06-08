@@ -85,14 +85,16 @@ export default function Header({ onNavigate, activeSection, onOpenSubmitModal, o
 
           {/* Call to Actions */}
           <div className="hidden lg:flex items-center space-x-3">
-            <button
+            <a
               id="header-register-now"
-              onClick={onOpenRegisterModal}
-              className="px-5 py-2.5 bg-brand-navy hover:bg-brand-orange text-white rounded-lg text-sm font-semibold transition-all duration-200 flex items-center space-x-1.5 shadow-sm hover:shadow-md cursor-pointer"
+              href="https://forms.gle/zN9kEgk3v9sbyJdi8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 bg-brand-navy hover:bg-brand-orange text-white rounded-lg text-sm font-semibold transition-all duration-200 flex items-center space-x-1.5 shadow-sm hover:shadow-md cursor-pointer no-underline"
             >
               <span>Register Now</span>
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
           </div>
 
           {/* Mobile hamburger menu trigger */}
@@ -130,14 +132,17 @@ export default function Header({ onNavigate, activeSection, onOpenSubmitModal, o
             </button>
           ))}
           <div className="pt-4 border-t border-brand-gray flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3 px-4">
-            <button
+            <a
               id="mobile-register-now"
-              onClick={() => { setIsOpen(false); onOpenRegisterModal(); }}
-              className="w-full text-center px-4 py-2.5 bg-brand-navy hover:bg-brand-orange text-white rounded-lg text-sm font-semibold transition-all duration-200 flex items-center justify-center space-x-1.5 cursor-pointer"
+              href="https://forms.gle/zN9kEgk3v9sbyJdi8"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="w-full text-center px-4 py-2.5 bg-brand-navy hover:bg-brand-orange text-white rounded-lg text-sm font-semibold transition-all duration-200 flex items-center justify-center space-x-1.5 cursor-pointer no-underline"
             >
               <span>Register Now</span>
               <ArrowRight className="w-4 h-4 text-white" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
