@@ -150,7 +150,7 @@ export default function RegistrationVenue({ isRegisterModalOpen, onCloseRegister
                     <tr className="border-b border-brand-gray bg-brand-bg/50">
                       <td className="px-4 py-3 text-xs font-semibold text-brand-navy">Virtual Presentation</td>
                       <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 70</td>
-                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 105</td>
+                      <td className="text-center px-3 py-3 text-xs font-bold text-brand-navy">USD 90</td>
                     </tr>
                     <tr>
                       <td className="px-4 py-3 text-xs font-semibold text-brand-navy">Virtual Listener</td>

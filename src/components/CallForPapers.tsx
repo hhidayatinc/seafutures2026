@@ -94,7 +94,7 @@ export default function CallForPapers() {
                     <Award className="w-4 h-4" />
                   </div>
                   <span className="text-sm sm:text-base text-gray-700 font-sans leading-relaxed">
-                    International Journal indexed by Scopus <span className="font-bold text-brand-navy">(USD 200)</span>
+                    Scopus-Indexed International Journal <span className="font-bold text-brand-navy">(Deposit: USD 200)</span>
                   </span>
                 </li>
                 <li className="flex items-start gap-3 group">
@@ -102,7 +102,7 @@ export default function CallForPapers() {
                     <Layers className="w-4 h-4" />
                   </div>
                   <span className="text-sm sm:text-base text-gray-700 font-sans leading-relaxed">
-                    International Proceedings indexed by Scopus <span className="font-bold text-brand-navy">(USD 175)</span>
+                    Scopus-Indexed International Proceedings/Book Chapter <span className="font-bold text-brand-navy">(USD 175)</span>
                   </span>
                 </li>
                 <li className="flex items-start gap-3 group">
@@ -110,7 +110,7 @@ export default function CallForPapers() {
                     <TableProperties className="w-4 h-4" />
                   </div>
                   <span className="text-sm sm:text-base text-gray-700 font-sans leading-relaxed">
-                    International Proceeding <span className="font-bold text-brand-navy">(USD 100)</span>
+                    International Proceeding/Book Chapter <span className="font-bold text-brand-navy">(USD 100)</span>
                   </span>
                 </li>
               </ul>
