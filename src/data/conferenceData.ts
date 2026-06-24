@@ -32,21 +32,51 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     id: 'panel-3',
-    name: 'Expert Panelist TBA',
-    title: 'Focus: Human-AI Integration in Social Sectors',
-    affiliation: 'To Be Confirmed',
+    name: 'Prof. Amran Rasli',
+    title: 'Professor of Management',
+    affiliation: 'Faculty of Business and Communications (FBC), INTI International University, Malaysia',
     type: 'panel',
-    bio: 'Panelist specializing in technology, artificial intelligence policy, and digital social transformation.',
-    isTBC: true
+    avatarUrl: '/images/prof-amran.jpeg',
+    bio: 'Prof. Amran specialized in Human Resource Management, Service Quality, Performance Measurement and Technology Management.',
+    isTBC: false
   },
   {
     id: 'panel-4',
-    name: 'Policy Expert TBA',
-    title: 'Focus: Public Policy and Social Welfare',
-    affiliation: 'To Be Confirmed',
+    name: 'Assoc. Prof. Dr Muhammad Shujaat Mubarik',
+    title: 'Associate Professor of Logistics and Supply Chain Management',
+    affiliation: 'Heriot-Watt University, Scotland (UK)',
     type: 'panel',
-    isTBC: true
+    avatarUrl: '/images/dr-shujaat.png',
+    bio: 'Assoc. Prof. Dr Muhammad Shujaat Mubarik specializes in Resilience, Digitalilzation, Sustainable Supply Chain Management.',
+    isTBC: false
+  },
+  {
+    id: 'panel-5',
+    name: 'Prof. Agata Wiktoria Zietek',
+    title: 'Professor in International Relations Department,',
+    affiliation: 'Faculty of Political Science and Journalism, Maria Curie Sklodowska University (UMCS), Poland',
+    type: 'panel',
+    avatarUrl: '/images/prof-agata.jpg',
+    bio: 'Prof. Agata Wiktoria Zietek specializes in International Relations.',
+    isTBC: false
   }
+  // {
+  //   id: 'panel-3',
+  //   name: 'Expert Panelist TBA',
+  //   title: 'Focus: Human-AI Integration in Social Sectors',
+  //   affiliation: 'To Be Confirmed',
+  //   type: 'panel',
+  //   bio: 'Panelist specializing in technology, artificial intelligence policy, and digital social transformation.',
+  //   isTBC: true
+  // },
+  // {
+  //   id: 'panel-4',
+  //   name: 'Policy Expert TBA',
+  //   title: 'Focus: Public Policy and Social Welfare',
+  //   affiliation: 'To Be Confirmed',
+  //   type: 'panel',
+  //   isTBC: true
+  // }
 ];
 
 export const DATES: DateMilestone[] = [
