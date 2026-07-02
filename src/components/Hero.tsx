@@ -90,14 +90,16 @@ export default function Hero({ onOpenSubmitModal, onOpenRegisterModal, onScrollT
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 pt-2">
-              <button
+              <a
                 id="hero-register"
-                onClick={onOpenRegisterModal}
+                href="https://forms.gle/zN9kEgk3v9sbyJdi8"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3.5 bg-brand-orange hover:bg-brand-yellow hover:text-brand-navy text-white rounded-xl text-md font-semibold transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center space-x-2 cursor-pointer"
               >
                 <span>Register Now</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
               <button
                 id="hero-view-subthemes"
                 onClick={() => onScrollToSection('call-for-papers')}
