@@ -29,6 +29,7 @@ export default function Header({ onNavigate, activeSection, onOpenSubmitModal, o
     { name: 'Home', id: 'home' },
     { name: 'About', id: 'about' },
     { name: 'Speakers', id: 'speakers' },
+    { name: 'Committee', id: 'committee' },
     { name: 'Call for Papers', id: 'call-for-papers' },
     { name: 'Program & Dates', id: 'program' },
     { name: 'Venue', id: 'venue' },

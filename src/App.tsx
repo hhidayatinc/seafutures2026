@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Speakers from './components/Speakers';
+import Committee from './components/Committee';
 import CallForPapers from './components/CallForPapers';
 import ProgramTimeline from './components/ProgramTimeline';
 import RegistrationVenue from './components/RegistrationVenue';
@@ -23,7 +24,7 @@ export default function App() {
   // Monitor scrolling to highlight correct navigation item
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'speakers', 'call-for-papers', 'program', 'venue', 'contact'];
+      const sections = ['home', 'about', 'speakers', 'committee', 'call-for-papers', 'program', 'venue', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -105,6 +106,8 @@ export default function App() {
         <About />
         
         <Speakers />
+        
+        <Committee />
         
         <CallForPapers />
         

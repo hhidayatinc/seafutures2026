@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Layers, TableProperties, Sparkles } from 'lucide-react';
+import { Award, Layers, TableProperties, Sparkles, BookOpen } from 'lucide-react';
 import { SUB_THEMES, CORE_INFO } from '../data/conferenceData';
 
 export default function CallForPapers() {
@@ -116,11 +116,42 @@ export default function CallForPapers() {
               </ul>
             </div>
 
+            {/* Affiliated Journals/Proceedings */}
+            <div className="mt-8">
+              <p className="text-sm sm:text-base font-semibold text-brand-navy font-display mb-4 flex items-center gap-2">
+                <BookOpen className="w-5 h-5 text-brand-orange" />
+                Affiliated Journals / Proceedings:
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {[
+                  'Frontiers in Human Dynamics',
+                  'Discover Sustainability',
+                  'Quality and Quantity',
+                  'Future Business Journal',
+                  'Human Behavior and Emerging Technologies',
+                  'Springer Proceedings in Business and Economics',
+                  'VDU Journal',
+                ].map((journal) => (
+                  <div
+                    key={journal}
+                    className="flex items-center gap-2.5 bg-gradient-to-r from-blue-50/60 to-orange-50/40 border border-brand-gray/60 rounded-lg px-4 py-2.5 hover:border-brand-orange/30 hover:shadow-sm transition-all duration-300 group"
+                  >
+                    <span className="w-2 h-2 rounded-full bg-brand-orange shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                    <span className="text-sm text-gray-700 font-sans font-medium">{journal}</span>
+                  </div>
+                ))}
+                <div className="flex items-center gap-2.5 bg-gradient-to-r from-amber-50/60 to-orange-50/60 border border-brand-orange/20 rounded-lg px-4 py-2.5">
+                  <span className="w-2 h-2 rounded-full bg-brand-navy shrink-0 animate-pulse" />
+                  <span className="text-sm text-brand-navy font-sans font-semibold italic">And more...</span>
+                </div>
+              </div>
+            </div>
+
             <div className="border-t border-brand-gray/80 pt-5 mt-6">
               <div className="flex items-start gap-3 bg-gradient-to-r from-amber-50 to-orange-50 border border-brand-orange/15 rounded-xl p-4">
                 <Sparkles className="w-5 h-5 text-brand-orange shrink-0 mt-0.5" />
                 <p className="text-xs sm:text-sm text-gray-600 font-sans leading-relaxed">
-                  <span className="font-bold text-brand-navy">Please note</span> that all full paper submissions will undergo a separate review and editorial process, subject to the requirements of the respective journal or publisher.
+                  <span className="font-bold text-brand-navy">Please note</span>that all full paper submissions will undergo a separate review and editorial process, subject to the requirements of the respective journal or publisher. The entire process is estimated to take at least 3-5 months; however, this timeline is not guaranteed and highly depends on the author's responsiveness and each journal's specific editorial workflow.
                 </p>
               </div>
             </div>

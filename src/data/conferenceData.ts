@@ -3,18 +3,19 @@ import { Speaker, DateMilestone, SubTheme } from '../types';
 export const SPEAKERS: Speaker[] = [
   {
     id: 'keynote-1',
-    name: 'Distinguished Speaker TBA',
-    title: 'Focus: Regional Cooperation & Future Social Policies',
-    affiliation: 'To Be Announced (Leading Global Intellect)',
+    name: 'Assoc. Prof. Dr. Akmar Hayati Ahmad Ghazali',
+    title: 'DEPUTY DEAN (RESEARCH & INNOVATION)',
+    affiliation: 'Faculty of Modern Languages and Communication, Universiti Putra Malaysia',
     type: 'keynote',
-    bio: 'The keynote address will feature a globally prominent social scientist focusing on political ecology, sustainable transitions, and interdisciplinary future scenarios for Southeast Asia.',
+    avatarUrl: '/images/dr_akmar.jpeg',
+    bio: 'Field of supervision : Journalism / Mass COmmunication / Youth Studies / Leadership Studies',
     isTBC: true
   },
   {
     id: 'panel-1',
     name: 'Dr. Anggun Trisnanto Hari Susilo, S.IP., M.IDEA.',
     title: 'Senior Lecturer, Department of International Relations',
-    affiliation: 'Faculty of Social and Political Sciences (FISIP), Universitas Brawijaya',
+    affiliation: 'Faculty of Social and Political Sciences (FISIP), Universitas Brawijaya. Indonesia',
     type: 'panel',
     avatarUrl: '/images/DR ANGGUN.jpeg',
     bio: 'Dr. Anggun is an esteemed researcher specialized in International Political Economy, Southeast Asian regional integration, and developmental network dynamics.',
@@ -22,12 +23,12 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     id: 'panel-2',
-    name: 'Assoc. Prof. Dr. Hazlina Abdul Halim',
-    title: 'Dean, Faculty of Modern Languages and Communication',
-    affiliation: 'Universiti Putra Malaysia (UPM)',
+    name: 'Dr. Sharifah Sofiah Syed Zainudin',
+    title: 'Senior Lecturer',
+    affiliation: 'Faculty of Modern Languages and Communication, Universiti Putra Malaysia',
     type: 'panel',
-    avatarUrl: '/images/DR HAZLINA.png',
-    bio: 'Assoc. Prof. Dr. Hazlina Halim specializes in linguistics, socio-cultural communication, and digital narratives across multicultural communities in Malaysia and Southeast Asia.',
+    avatarUrl: '/images/dr_sofiah.jpeg',
+    bio: 'Fiels of supervision: Communication Technology, Development Communication, Human Communication',
     isTBC: true
   },
   {
@@ -59,24 +60,26 @@ export const SPEAKERS: Speaker[] = [
     avatarUrl: '/images/prof-agata.jpg',
     bio: 'Prof. Agata Wiktoria Zietek specializes in International Relations.',
     isTBC: false
+  },
+  {
+    id: 'panel-6',
+    name: 'Dr. Doris Ogueri',
+    title: 'Lecturer',
+    affiliation: 'Faculty of Management, Shinawatra University, Thailand',
+    type: 'panel',
+    avatarUrl: '/images/dr_doris.jpeg',
+    bio: 'Dr. Doris Ogueri specializes in Enviromental Science, Water Quality, Pollution Control, Enviromental Education, and Sustainability',
+    isTBC: true
+  },
+  {
+    id: 'panel-7',
+    name: 'Mrs Joanne Branicki-Tolchard',
+    title: 'Head of Secondary, Vice President',
+    affiliation: ' One World International School Nanyang Campus, Singapore',
+    type: 'panel',
+    avatarUrl: '/images/mrs_joanne.jpg',
+    isTBC: true
   }
-  // {
-  //   id: 'panel-3',
-  //   name: 'Expert Panelist TBA',
-  //   title: 'Focus: Human-AI Integration in Social Sectors',
-  //   affiliation: 'To Be Confirmed',
-  //   type: 'panel',
-  //   bio: 'Panelist specializing in technology, artificial intelligence policy, and digital social transformation.',
-  //   isTBC: true
-  // },
-  // {
-  //   id: 'panel-4',
-  //   name: 'Policy Expert TBA',
-  //   title: 'Focus: Public Policy and Social Welfare',
-  //   affiliation: 'To Be Confirmed',
-  //   type: 'panel',
-  //   isTBC: true
-  // }
 ];
 
 export const DATES: DateMilestone[] = [
