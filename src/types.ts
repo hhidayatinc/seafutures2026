@@ -5,6 +5,7 @@ export interface Speaker {
   affiliation: string;
   type: 'keynote' | 'panel' | 'invited' | 'opening';
   avatarUrl?: string;
+  avatarPosition?: string;
   bio?: string;
   isTBC?: boolean;
 }

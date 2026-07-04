@@ -2,7 +2,7 @@ import React from 'react';
 import { HelpCircle } from 'lucide-react';
 import { SPEAKERS } from '../data/conferenceData';
 
-const SpeakerAvatar = ({ name, type, avatarUrl }: { name: string; type: 'keynote' | 'panel'; avatarUrl?: string }) => {
+const SpeakerAvatar = ({ name, type, avatarUrl, avatarPosition }: { name: string; type: 'keynote' | 'panel'; avatarUrl?: string; avatarPosition?: string }) => {
   const words = name.split(' ');
   let initials = '';
   const skippedTitles = ['DR', 'DR.', 'ASSOC', 'ASSOC.', 'PROF', 'PROF.', 'S.IP.', 'M.IDEA.'];
@@ -30,6 +30,7 @@ const SpeakerAvatar = ({ name, type, avatarUrl }: { name: string; type: 'keynote
           src={avatarUrl}
           alt={name}
           className="absolute inset-0 w-full h-full object-cover"
+          style={{ objectPosition: avatarPosition || 'top' }}
         />
       ) : (
         <>
@@ -98,7 +99,7 @@ export default function Speakers() {
                   CONFIRMED
                 </div>
                 
-                <SpeakerAvatar name={speaker.name} type="keynote" avatarUrl={speaker.avatarUrl} />
+                <SpeakerAvatar name={speaker.name} type="keynote" avatarUrl={speaker.avatarUrl} avatarPosition={speaker.avatarPosition} />
 
                 <h4 className="text-xl font-bold text-brand-navy font-display">
                   {speaker.name}
@@ -136,7 +137,7 @@ export default function Speakers() {
                   TBC
                 </div>
                 
-                <SpeakerAvatar name={speaker.name} type="keynote" avatarUrl={speaker.avatarUrl} />
+                <SpeakerAvatar name={speaker.name} type="keynote" avatarUrl={speaker.avatarUrl} avatarPosition={speaker.avatarPosition} />
 
                 <h4 className="text-xl font-bold text-brand-navy font-display">
                   {speaker.name}
@@ -191,7 +192,7 @@ export default function Speakers() {
 
                 <div className="flex-1 flex flex-col justify-between">
                   <div>
-                    <SpeakerAvatar name={speaker.name} type="panel" avatarUrl={speaker.avatarUrl} />
+                    <SpeakerAvatar name={speaker.name} type="panel" avatarUrl={speaker.avatarUrl} avatarPosition={speaker.avatarPosition} />
 
                     <h4 className="text-md font-bold text-brand-navy font-display group-hover:text-brand-orange transition-colors">
                       {speaker.name}

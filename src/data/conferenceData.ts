@@ -68,6 +68,7 @@ export const SPEAKERS: Speaker[] = [
     affiliation: 'Faculty of Political Science and Journalism, Maria Curie Sklodowska University (UMCS), Poland',
     type: 'panel',
     avatarUrl: '/images/prof-agata.jpg',
+    avatarPosition: 'center 20%',
     bio: 'Prof. Agata Wiktoria Zietek specializes in International Relations.',
     isTBC: false
   },
