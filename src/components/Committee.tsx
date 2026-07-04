@@ -68,6 +68,11 @@ const committeeData: CommitteeGroup[] = [
         role: 'Professor, Faculty of Social and Political Science',
         affiliation: 'Universitas Brawijaya, Indonesia',
       },
+      {
+        name: 'Hendrix Yulis Setyawan, S.TP., M.Si., Ph.D',
+        role: 'Lecturer, Faculty of Agroindustry and Biosystems Technology ',
+        affiliation: 'Universitas Brawijaya, Indonesia',
+      },
     ],
   },
   {
