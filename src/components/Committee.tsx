@@ -73,6 +73,13 @@ const committeeData: CommitteeGroup[] = [
   {
     title: 'Organising Committee',
     members: [
+      { name: 'Hendrix Yulis Setyawan, S.TP., M.Si., Ph.D', role: 'Chair', affiliation: 'Universitas Brawijaya, Indonesia' },
+      { name: 'Aulia Luqman Aziz, S.S., S.Pd., M.Pd.', role: 'Chair', affiliation: 'Universitas Brawijaya, Indonesia' },
+      { name: 'Henny Rosalinda, S.IP., M.A., Ph.D', role: 'Deputy Chair I', affiliation: 'Universitas Brawijaya, Indonesia' },
+      { name: 'Dr. Ana Marie J. Matalines', role: 'Deputy Chair II', affiliation: 'Davao del Sur State College, the Philippines' },
+      { name: 'Lavrita Hita Pertiwi, S.AB.', role: 'General Secretary', affiliation: 'Universitas Brawijaya, Indonesia' },
+      { name: 'Cydeah Aldic Conchas', role: 'Secretary I', affiliation: 'Davao del Sur State College, the Philippines' },
+      { name: 'Ain Ajeerah Binti Ramli', role: 'Secretary II', affiliation: 'Universiti Teknologi Malaysia, Malaysia' },
       { name: 'Dr. Mohamad Noor Salehhudin Sharipudin', affiliation: 'Universiti Putra Malaysia' },
       { name: 'Dr. Siti Salbiah Norazan', affiliation: 'Universiti Putra Malaysia' },
       { name: 'Dr. Sharifah Sofiah Syed Zainudin', affiliation: 'Universiti Putra Malaysia' },
@@ -107,12 +114,18 @@ const committeeData: CommitteeGroup[] = [
   },
 ];
 
-/* ─── Format member line ─── */
-const formatMember = (m: CommitteeMember): string => {
-  if (m.role) {
-    return `${m.name}, ${m.role}, ${m.affiliation}`;
+/* ─── Leadership-style short role titles ─── */
+const SHORT_ROLES = ['Chair', 'Deputy Chair I', 'Deputy Chair II', 'General Secretary', 'Secretary I', 'Secretary II'];
+
+/* ─── Format member display ─── */
+const formatMember = (m: CommitteeMember): React.ReactNode => {
+  if (m.role && SHORT_ROLES.includes(m.role)) {
+    return <><strong className="text-brand-navy font-semibold">{m.role}:</strong> {m.name}, {m.affiliation}</>;
   }
-  return `${m.name}, ${m.affiliation}`;
+  if (m.role) {
+    return <>{m.name}, {m.role}, {m.affiliation}</>;
+  }
+  return <>{m.name}, {m.affiliation}</>;
 };
 
 /* ─── Main Component ─── */
