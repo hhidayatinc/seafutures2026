@@ -2,6 +2,16 @@ import { Speaker, DateMilestone, SubTheme } from '../types';
 
 export const SPEAKERS: Speaker[] = [
   {
+    id: 'opening-1',
+    name: 'Dr. Ahmad Imron Rozuli, S.E., M.Si',
+    title: 'Dean of Faculty of Social and Political Science',
+    affiliation: 'Universitas Brawijaya, Indonesia',
+    type: 'opening',
+    avatarUrl: '/images/ahmadimron.webp',
+    bio: 'Delivering the opening remarks for the Southeast Asia Futures Conference on Social Sciences 2026.',
+    isTBC: false
+  },
+  {
     id: 'keynote-1',
     name: 'Assoc. Prof. Dr. Akmar Hayati Ahmad Ghazali',
     title: 'DEPUTY DEAN (RESEARCH & INNOVATION)',
@@ -9,7 +19,7 @@ export const SPEAKERS: Speaker[] = [
     type: 'keynote',
     avatarUrl: '/images/dr_akmar.jpeg',
     bio: 'Field of supervision : Journalism / Mass COmmunication / Youth Studies / Leadership Studies',
-    isTBC: true
+    isTBC: false
   },
   {
     id: 'panel-1',
@@ -29,7 +39,7 @@ export const SPEAKERS: Speaker[] = [
     type: 'panel',
     avatarUrl: '/images/dr_sofiah.jpeg',
     bio: 'Fiels of supervision: Communication Technology, Development Communication, Human Communication',
-    isTBC: true
+    isTBC: false
   },
   {
     id: 'panel-3',
@@ -69,7 +79,7 @@ export const SPEAKERS: Speaker[] = [
     type: 'panel',
     avatarUrl: '/images/dr_doris.jpeg',
     bio: 'Dr. Doris Ogueri specializes in Enviromental Science, Water Quality, Pollution Control, Enviromental Education, and Sustainability',
-    isTBC: true
+    isTBC: false
   },
   {
     id: 'panel-7',
@@ -78,7 +88,7 @@ export const SPEAKERS: Speaker[] = [
     affiliation: ' One World International School Nanyang Campus, Singapore',
     type: 'panel',
     avatarUrl: '/images/mrs_joanne.jpg',
-    isTBC: true
+    isTBC: false
   }
 ];
 

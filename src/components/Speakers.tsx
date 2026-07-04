@@ -54,8 +54,9 @@ const SpeakerAvatar = ({ name, type, avatarUrl }: { name: string; type: 'keynote
 };
 
 export default function Speakers() {
-  // Divide into panels or keynotes
+  // Divide into panels, keynotes, or opening
   const keynotes = SPEAKERS.filter(s => s.type === 'keynote');
+  const openings = SPEAKERS.filter(s => s.type === 'opening');
   const panelists = SPEAKERS.filter(s => s.type === 'panel');
 
   return (
@@ -76,20 +77,60 @@ export default function Speakers() {
           </p>
         </div>
 
-        {/* Keynote Focus Card */}
-        <div className="mb-16">
-          <div className="text-center mb-8">
-            <h3 className="text-xs font-mono tracking-wider text-brand-orange font-bold uppercase">
-              KEYNOTE ADDRESS
-            </h3>
-            <p className="text-xs text-gray-400 font-sans mt-0.5">Session to be scheduled on Day 1 (Oct 31)</p>
+        {/* Opening Remarks & Keynote Side by Side */}
+        <div className="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          {/* Opening Remarks Card */}
+          <div>
+            <div className="text-center mb-8">
+              <h3 className="text-xs font-mono tracking-wider text-[#14496B] font-bold uppercase">
+                OPENING REMARKS
+              </h3>
+              <p className="text-xs text-gray-400 font-sans mt-0.5">Session to be scheduled on Day 1 (Oct 31)</p>
+            </div>
+
+            {openings.map((speaker) => (
+              <div 
+                key={speaker.id}
+                className="bg-white border-2 border-solid border-[#14496B]/30 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 h-[calc(100%-3.5rem)]"
+              >
+                <div className="absolute top-0 right-0 bg-emerald-600 text-white text-[10px] font-mono font-bold uppercase px-3.5 py-1 rounded-bl-xl shadow-sm">
+                  CONFIRMED
+                </div>
+                
+                <SpeakerAvatar name={speaker.name} type="keynote" avatarUrl={speaker.avatarUrl} />
+
+                <h4 className="text-xl font-bold text-brand-navy font-display">
+                  {speaker.name}
+                </h4>
+                <p className="text-sm text-[#14496B] font-semibold font-sans mt-1">
+                  {speaker.title}
+                </p>
+                <p className="text-xs text-gray-500 font-mono mt-1 uppercase">
+                  {speaker.affiliation}
+                </p>
+
+                <p className="text-sm text-gray-600 leading-relaxed font-sans max-w-md mx-auto mt-4 px-2">
+                  {speaker.bio}
+                </p>
+
+              </div>
+            ))}
           </div>
 
-          <div className="max-w-2xl mx-auto">
+          {/* Keynote Focus Card */}
+          <div>
+            <div className="text-center mb-8">
+              <h3 className="text-xs font-mono tracking-wider text-brand-orange font-bold uppercase">
+                KEYNOTE ADDRESS
+              </h3>
+              <p className="text-xs text-gray-400 font-sans mt-0.5">Session to be scheduled on Day 1 (Oct 31)</p>
+            </div>
+
             {keynotes.map((speaker) => (
               <div 
                 key={speaker.id}
-                className="bg-white border-2 border-dashed border-brand-orange/30 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+                className="bg-white border-2 border-dashed border-brand-orange/30 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 h-[calc(100%-3.5rem)]"
               >
                 <div className="absolute top-0 right-0 bg-brand-orange text-white text-[10px] font-mono font-bold uppercase px-3.5 py-1 rounded-bl-xl shadow-sm">
                   TBC
@@ -111,12 +152,11 @@ export default function Speakers() {
                   {speaker.bio}
                 </p>
 
-                <div className="mt-6 pt-5 border-t border-brand-gray flex justify-center items-center space-x-2">
-                  <span className="text-xs font-mono text-gray-400">Status: Nominated / Invitations Sent</span>
-                </div>
+               
               </div>
             ))}
           </div>
+
         </div>
 
         {/* Panel Speakers Grid */}

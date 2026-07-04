@@ -3,7 +3,7 @@ export interface Speaker {
   name: string;
   title: string;
   affiliation: string;
-  type: 'keynote' | 'panel' | 'invited';
+  type: 'keynote' | 'panel' | 'invited' | 'opening';
   avatarUrl?: string;
   bio?: string;
   isTBC?: boolean;
