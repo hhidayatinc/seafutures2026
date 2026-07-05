@@ -131,10 +131,14 @@ export default function Speakers() {
             {keynotes.map((speaker) => (
               <div 
                 key={speaker.id}
-                className="bg-white border-2 border-dashed border-brand-orange/30 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 h-[calc(100%-3.5rem)]"
+                className={`bg-white border-2 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 h-[calc(100%-3.5rem)] ${
+                  speaker.isTBC ? 'border-dashed border-brand-orange/30' : 'border-solid border-emerald-600/30'
+                }`}
               >
-                <div className="absolute top-0 right-0 bg-brand-orange text-white text-[10px] font-mono font-bold uppercase px-3.5 py-1 rounded-bl-xl shadow-sm">
-                  TBC
+                <div className={`absolute top-0 right-0 text-white text-[10px] font-mono font-bold uppercase px-3.5 py-1 rounded-bl-xl shadow-sm ${
+                  speaker.isTBC ? 'bg-brand-orange' : 'bg-emerald-600'
+                }`}>
+                  {speaker.isTBC ? 'TBC' : 'CONFIRMED'}
                 </div>
                 
                 <SpeakerAvatar name={speaker.name} type="keynote" avatarUrl={speaker.avatarUrl} avatarPosition={speaker.avatarPosition} />
